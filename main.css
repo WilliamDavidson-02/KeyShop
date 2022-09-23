@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: 'Playfair Display', serif;
+}
+
+/* navbar */
+
+section {
+    max-width: 60vw;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navlist {
+    list-style-type: none;
+    text-align: center; 
+    padding: 0;
+    margin: 0;
+}
+
+.list, p {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 40px;
+    text-decoration: none;
+    color: #9c9385;
+}
+
+p:hover {
+    color: #748CAB;
+}
+
+/* end of navbar */
+
+/* ladingpage text */
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    width: 500px;
+}
+
+.secondline {
+    margin-top: 0;
+    width: 700px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 5px;
+    color: #E58F65;
+}
+
+h1, .secondline, h2 {
+    color: #5f5a53;
+}
+
+hr {
+    width: 500px;
+    margin: 10px 0;
+
+}
+
+/* end of ladingpage text */
+
+/* begining of keypadMK2 info on homepage */
+
+.pad {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 200px;
+    border-radius: 10px;
+}
+
+.pad_box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mk_text {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 50px;
+    padding-right: 30px;
+    font-size: 2rem;
+}
+
+.mk_bread_text {
+    width: 300px;
+    text-align: end;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* end of mk2 */
+
+/* promotion boxes on home page */
+
+.btn_promotion_directions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.button_btn {
+    background-color: #E58F65;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    color: white;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem
+}
+
+.button_btn:hover {
+    color: white;
+    background-color: #748CAB;
+}
+
+a {
+    text-decoration: none;
+}
+
+.key_promotion_text {
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.keyboard_btn, .keycaps_btn {
+    background-image: url("keyboard.PNG");
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.keycaps_btn {
+    background-image: url("keycaps.PNG");
+}
+
+.img_text {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_text:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* end of promotion boxes */
+
+/* footer */
+
+.container_footer {
+    margin-top: 100px;
+    background-color: #5f5a53;
+    width: 100vw;
+    height: 300px;
+}
+
+.subscribe {
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.footer_line {
+    width: 90vw;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form_email, .subscribe {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.list_footer, .copyright_under_links {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.copyright_under_links {
+    font-size: 0.7rem;  
+}
