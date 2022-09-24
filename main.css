@@ -3,17 +3,19 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+    flex-wrap: wrap;
 }
-
-/* navbar */
 
 section {
     max-width: 60vw;
     margin: auto;
     margin-top: 150px;
 }
+
+/* navbar */
 
 .logo {
     width: 100px;
@@ -45,7 +47,7 @@ section {
 }
 
 p:hover {
-    color: #748CAB;
+    color: #E58F65;
 }
 
 /* end of navbar */
@@ -125,6 +127,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 100px;
 }
 
@@ -206,6 +209,7 @@ a {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    border-color: #9c9385;
 }
 
 .form_email, .subscribe {
@@ -220,8 +224,206 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0;
 }
 
 .copyright_under_links {
     font-size: 0.7rem;  
+}
+
+input[type=submit] {
+    background-color: #E58F65;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin-left: 10px;
+    color: white;
+    font-family: "Playfair Display";
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: #748CAB;
+}
+
+input[type=email] {
+    border-radius: 15px;
+    border: none;
+}
+
+
+/* shop page */
+
+.container_shop_brows_page {
+    margin-top: 50px;
+    background-image: linear-gradient(to bottom,rgba(128, 128, 128, 0.4),rgba(128, 128, 128, 0.4)),url("https://ae01.alicdn.com/kf/U542643c3dc174c018ca2756e34d4a13bn/KBDfans-Fully-Assembled-Tofu65-HOT-SWAP-Keyboard-With-OSA-Simple-Grey-PBT-Doubleshot-Keycaps-Ready-To.jpg_Q90.jpg_.webp");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container_shop_promotion_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    flex-direction: column;
+}
+
+.extra_btn {
+    width: 250px;
+    height: 45px;
+    font-size: 1.5rem;
+}
+
+.brows_promotion_text {
+    text-align: center;
+    font-size: 6rem;
+    color: white;
+}
+
+.container_produkt_brows {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section_product_brows {
+    margin-top: 0;
+}
+
+.produkt_brows {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.h1_produckt_heder {
+    text-align: center;
+}
+
+.product_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+}
+
+.product_text {
+    width: 300px;
+    height: auto;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.img_phase_one {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s; 
+}
+
+.img_phase_one:hover {
+    transform: scale(1.03);
+}
+
+.container_products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button_price {
+    margin: 5px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.img_view {
+    border-radius: 10px;
+    width: 500px;
+}
+
+.phase_one_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.produck_container_info {
+    margin: 0 20px;
+}
+
+.h1_product_text {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.btn_cart, .btn_now {
+    width: 500px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.price_text {
+    padding: 0;
+    margin-bottom: 100px;
+    font-size: 1.5rem;
+}
+
+.btn_cart {
+    background-color: #748CAB;
+}
+
+.btn_cart:hover {
+    background-color: #E58F65;
+}
+
+.btn_now:hover {
+    background-color: rgba(229, 143, 101, 0.7);
+}
+
+/* phase image gallery */
+
+.img_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.p-margin {
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.spec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.spec-list-phase, spec-list {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 500;
 }
