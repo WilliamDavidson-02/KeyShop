@@ -30,6 +30,11 @@ section {
     margin-top: 20px;
 }
 
+.navbar-about {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
 .navlist {
     list-style-type: none;
     text-align: center; 
@@ -257,7 +262,7 @@ input[type=email] {
 
 /* shop page */
 
-.container_shop_brows_page {
+.container_shop_brows_page, .contact-container {
     margin-top: 50px;
     background-image: linear-gradient(to bottom,rgba(128, 128, 128, 0.4),rgba(128, 128, 128, 0.4)),url("https://ae01.alicdn.com/kf/U542643c3dc174c018ca2756e34d4a13bn/KBDfans-Fully-Assembled-Tofu65-HOT-SWAP-Keyboard-With-OSA-Simple-Grey-PBT-Doubleshot-Keycaps-Ready-To.jpg_Q90.jpg_.webp");
     height: 500px;
@@ -324,7 +329,7 @@ input[type=email] {
     margin-top: 5px;
 }
 
-.img_phase_one {
+.img_phase_one, .project-img {
     width: 300px;
     height: 300px;
     border-radius: 10px;
@@ -332,7 +337,7 @@ input[type=email] {
     transition: all .2s; 
 }
 
-.img_phase_one:hover {
+.img_phase_one, .project-img:hover {
     transform: scale(1.03);
 }
 
@@ -406,7 +411,7 @@ input[type=email] {
     margin-top: 100px;
 }
 
-.img, .project-img {
+.img, .project-img, .switchlogo {
     width: 400px;
     height: 400px;
     margin: 20px;
@@ -429,6 +434,120 @@ input[type=email] {
     font-weight: 500;
 }
 
+.project-container {
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .project-img {
-    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+
+.pbtfans {
+    padding-left: 0;
+}
+
+.pbtfans:hover {
+    color: #9c9385;
+}
+
+.background-image-about {
+    background: url("darksand.jpg");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+
+.about-p {
+    width: 500px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.about-p:hover {
+    color: white;
+}
+
+.about-p-signutre {
+    font-style: italic;
+    width: 500px;
+    text-align: end;
+}
+
+.how-are-we-container {
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.switchlogo {
+    width: 400px;
+    height: 400px;
+}
+
+.haw-container-text {
+    width: 700px;
+}
+
+.quot-container {
+    background-color: #5f5a53;
+    height: 350px;
+}
+
+.hwa-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.contact-container {
+    margin-top: 200px;
+    padding: 20px 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gmap_canvas {
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.contact {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icons {
+    font-size: 2rem;
+    padding: 0;
+    margin: 5px;
+    color: white;
 }
